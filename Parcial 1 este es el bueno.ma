@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff08 scene
 //Name: Parcial 1 este es el bueno.ma
-//Last modified: Sat, Apr 06, 2019 02:11:08 PM
+//Last modified: Sat, Apr 06, 2019 02:19:51 PM
 //Codeset: 1252
 requires maya "2018ff08";
 requires "mtoa" "3.1.2.1";
@@ -16,13 +16,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "4E18AF79-4D64-4D0F-5EF2-06B55C5A3DFB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 376.46864862719389 -62.600851195680114 -313.94215603235187 ;
-	setAttr ".r" -type "double3" 9.8616472701166931 -572.99999999958106 0 ;
+	setAttr ".t" -type "double3" 97.210989451731706 66.982666206337726 415.5065176386239 ;
+	setAttr ".r" -type "double3" -7.5383527294605841 -718.59999999962474 -6.3381532830025183e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "52242C1E-45CC-E47B-AFAA-8690B2EC2733";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 533.57185598424303;
+	setAttr ".coi" 291.17239548732414;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -18499,9 +18499,11 @@ createNode mesh -n "polySurfaceShape12" -p "polySurface12";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "polySurface13" -p "pasted__polySurface140";
 	rename -uid "0EAB80EA-4394-1E38-9522-9FA6E5B254FD";
-	setAttr ".t" -type "double3" 31.075050354003906 -3.814697265625e-06 1.1387062072753906 ;
-	setAttr ".rp" -type "double3" 214.35794830322266 -14.203815460205078 107.93053817749023 ;
-	setAttr ".sp" -type "double3" 214.35794830322266 -14.203815460205078 107.93053817749023 ;
+	setAttr ".t" -type "double3" 31.075050354003906 -3.814697265625e-06 -1.5198783874511577 ;
+	setAttr ".r" -type "double3" 0 -90 0 ;
+	setAttr ".rp" -type "double3" 213.21919250488398 -14.203815460205078 107.9305381774856 ;
+	setAttr ".rpt" -type "double3" 1.13875579833865 0 -1.1387557983352252 ;
+	setAttr ".sp" -type "double3" 213.21919250488398 -14.203815460205078 107.9305381774856 ;
 createNode mesh -n "polySurfaceShape13" -p "polySurface13";
 	rename -uid "F8DBAED0-431F-8F25-2EEC-2B8E88A499DB";
 	setAttr -k off ".v";
